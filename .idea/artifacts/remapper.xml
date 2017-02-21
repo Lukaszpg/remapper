@@ -1,0 +1,25 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" build-on-make="true" name="remapper">
+    <output-path>$PROJECT_DIR$/out/artifacts/remapper</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="pl.lukaszgo.main.Main" />
+        <option name="description" value="" />
+        <option name="height" value="433" />
+        <option name="htmlParamFile" value="" />
+        <option name="paramFile" value="" />
+        <option name="title" value="" />
+        <option name="vendor" value="" />
+        <option name="width" value="480" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="remapper.jar">
+        <element id="module-output" name="remapper" />
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

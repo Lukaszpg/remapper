@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="389.0" minWidth="480.0" prefHeight="389.0" prefWidth="522.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.lukaszgo.controllers.Controller">
+   <children>
+      <TextField fx:id="logonDetails" layoutX="7.0" layoutY="30.0" prefHeight="25.0" prefWidth="507.0" />
+      <TextField fx:id="mainSchema" layoutX="8.0" layoutY="84.0" prefHeight="25.0" prefWidth="218.0" />
+      <TextField fx:id="mainSchemaRemap" layoutX="255.0" layoutY="84.0" prefHeight="25.0" prefWidth="257.0" />
+      <TextField fx:id="editSchema" disable="true" editable="false" layoutX="8.0" layoutY="135.0" />
+      <TextField fx:id="editSchemaRemap" disable="true" editable="false" layoutX="256.0" layoutY="135.0" prefHeight="25.0" prefWidth="257.0" />
+      <TextField fx:id="omsSchema" disable="true" editable="false" layoutX="8.0" layoutY="186.0" />
+      <TextField fx:id="omsSchemaRemap" disable="true" editable="false" layoutX="256.0" layoutY="186.0" prefHeight="25.0" prefWidth="257.0" />
+      <Button id="start" fx:id="startButton" layoutX="8.0" layoutY="286.0" mnemonicParsing="false" onAction="#handleStartButton" prefHeight="92.0" prefWidth="507.0" text="Make it rain">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Button>
+      <Label layoutX="179.0" layoutY="7.0" prefHeight="18.0" prefWidth="161.0" text="System login/password@orcl" />
+      <Label layoutX="75.0" layoutY="63.0" text="Main schema" />
+      <Label layoutX="329.0" layoutY="63.0" text="Main schema remap" />
+      <Label layoutX="46.0" layoutY="116.0" text="Edit schema" />
+      <Label layoutX="330.0" layoutY="115.0" text="Edit schema remap" />
+      <Label layoutX="45.0" layoutY="166.0" text="Oms schema" />
+      <Label layoutX="330.0" layoutY="166.0" text="Oms schema remap" />
+      <Label layoutX="109.0" layoutY="224.0" text="Dump file (nazwa pliku z rozszerzeniem .dmp, nie ścieżka!)" />
+      <TextField fx:id="file" layoutX="8.0" layoutY="248.0" prefHeight="25.0" prefWidth="507.0" />
+      <CheckBox fx:id="editManualCheckbox" layoutX="164.0" layoutY="138.0" mnemonicParsing="false" text="Ręcznie" />
+      <Group layoutX="34.0" layoutY="245.0" />
+      <CheckBox fx:id="omsManualCheckbox" layoutX="163.0" layoutY="189.0" mnemonicParsing="false" text="Ręcznie" />
+   </children>
+</Pane>
